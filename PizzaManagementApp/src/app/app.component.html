@@ -1,6 +1,15 @@
-<h2>Teams</h2>
-<div *ngFor="let team of teams$ | async">
-  <h3>{{team.name}}</h3>
-  <p>{{team.description}}</p>
+<div class="container-fluid">
+  <div class="row">
+      <app-header class="header"></app-header>
+  </div>
+    <section>
+      <article>
+        <div class="row">
+          <div class="body">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </article>
+    </section>
 </div>
-<router-outlet></router-outlet>
+

@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
 
-  teams$: Observable<any> = this.http.get('/api/teams');
-  constructor(private http: HttpClient){}
+  constructor(){ }
   title = 'PizzaManagementApp';
+ // teams$: Observable<any> = this.http.get('api/teams');
 }

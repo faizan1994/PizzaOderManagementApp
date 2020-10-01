@@ -1,19 +1,34 @@
 {
-  "posts": [
+  "PizzaOrders": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "Id": 1,
+      "CustomerName": "Ravi",
+      "NoOfItemsOrdered": 2,
+      "CurrentStatus": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "Id": 2,
+      "CustomerName": "Sunita",
+      "NoOfItemsOrdered": 4,
+      "CurrentStatus": 2
+    },
+    {
+      "Id": 3,
+      "CustomerName": "Jason",
+      "NoOfItemsOrdered": 1,
+      "CurrentStatus": 3
+    },
+    {
+      "Id": 4,
+      "CustomerName": "Shubham",
+      "NoOfItemsOrdered": 6,
+      "CurrentStatus": 1
+    },
+    {
+      "Id": 5,
+      "CustomerName": "Momo",
+      "NoOfItemsOrdered": 1,
+      "CurrentStatus": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

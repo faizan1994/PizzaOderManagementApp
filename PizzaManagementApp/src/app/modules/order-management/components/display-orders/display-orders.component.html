@@ -1,0 +1,18 @@
+
+<div class="container">
+    
+    <div class="order-display header">
+        <h2>Orders Received</h2>
+        <div class="row" *ngFor="let order of ordersRecievedData">
+            <div class="col-lg-4">
+                <p>{{order.CustomerName}}</p>
+            </div>
+            <div class="col-lg-4">
+                <p>{{order.NoOfItemsOrdered}}</p>
+            </div>
+            <div class="col-lg-4">            
+                <p>{{order.CurrentStatus}}</p>
+            </div>
+        </div>
+    </div>
+</div>

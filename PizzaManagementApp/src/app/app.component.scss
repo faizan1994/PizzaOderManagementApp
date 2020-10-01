@@ -1,0 +1,17 @@
+.container-fluid{
+    .row{
+        .header{
+            width: -webkit-fill-available;
+        }
+    }
+    section{
+        article{
+            .row{
+                .body{
+                    width: -webkit-fill-available;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

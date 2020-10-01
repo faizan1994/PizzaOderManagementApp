@@ -12,5 +12,6 @@
         "coach": "Zinedine Zidane",
         "description": "The worst football team in the world!"
       }
-    ]
+    ],
+    "demoData":[{"a":1},{"a":2}]
   }
