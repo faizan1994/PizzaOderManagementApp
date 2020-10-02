@@ -27,7 +27,6 @@ export class OrderDetailsComponent implements OnInit {
       this.routeState = this.router.getCurrentNavigation().extras.state;
       if(this.routeState){
         this.dataFromRoute = this.routeState.data? this.routeState.data: null;
-        console.log("data from route", this.dataFromRoute);
       }
     }
   }
@@ -47,10 +46,8 @@ export class OrderDetailsComponent implements OnInit {
     if(this.dataFromRoute){
       this.filteredOrderDetailsData = data
       .filter(el => el.Id === this.dataFromRoute.Id);
-       console.log("filtered data", this.filteredOrderDetailsData);
        // assign the details of orders to datasource
        this.dataSource = this.filteredOrderDetailsData[0]? this.filteredOrderDetailsData[0].Items : []; 
-    console.log(this.dataSource);
       
       // total cost
       this.filteredOrderDetailsData[0].Items.forEach(ele => {
