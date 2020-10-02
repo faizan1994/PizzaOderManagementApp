@@ -2,11 +2,11 @@ export class PizzaOrderReceivedModel{
     Id: number;
     CustomerName: string;
     NoOfItemsOrdered: number;
-    CurrentStatus: Status
+    CurrentStatus: string
 }
 
-enum Status{
-    Recieved,
-    Preparing,
-    Ready
+export const Status = {
+    Recieved: "Recieved",
+    Preparing: "Being Prepared",
+    Ready: "Ready to serve"
 }

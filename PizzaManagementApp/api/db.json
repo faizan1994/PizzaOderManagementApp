@@ -1,34 +1,227 @@
 {
   "PizzaOrders": [
     {
-      "Id": 1,
+      "Id": 11111111,
       "CustomerName": "Ravi",
       "NoOfItemsOrdered": 2,
-      "CurrentStatus": 1
+      "CurrentStatus": "Being Prepared"
     },
     {
-      "Id": 2,
+      "Id": 11111112,
       "CustomerName": "Sunita",
       "NoOfItemsOrdered": 4,
-      "CurrentStatus": 2
+      "CurrentStatus": "Being Prepared"
     },
     {
-      "Id": 3,
+      "Id": 11111113,
       "CustomerName": "Jason",
       "NoOfItemsOrdered": 1,
-      "CurrentStatus": 3
+      "CurrentStatus": "Ready to serve"
     },
     {
-      "Id": 4,
+      "Id": 11111114,
       "CustomerName": "Shubham",
       "NoOfItemsOrdered": 6,
-      "CurrentStatus": 1
+      "CurrentStatus": "Recieved"
     },
     {
-      "Id": 5,
+      "Id": 11111115,
       "CustomerName": "Momo",
       "NoOfItemsOrdered": 1,
-      "CurrentStatus": 3
+      "CurrentStatus": "Ready to serve"
+    }
+  ],
+  "OrderDetails":[
+    {
+      "Id": 11111111,
+      "Items": [
+        {
+          "id":11,
+          "name":"Mr. Nice",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"assets/1.png",
+          "price":200,
+          "base":"Thin crust",
+          "type":"Cheese burst"
+       },
+       {
+          "id":12,
+          "name":"Narco",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"./assets/2.png",
+          "price":300,
+          "base":"Multigrain",
+          "type":"Cheese burst"
+       }
+      ],
+      "AddressLine1": "XYZ Street",
+      "AddressLine2": "Block Road",
+      "City":"Bengaluru",
+      "Landmark":"Opposite to Water Tank",
+      "Pincode":560059,
+      "State":"Karnataka"
+    },
+    {"Id": 11111112,
+      "Items": [
+        {
+          "id":11,
+          "name":"Mr. Nice",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"assets/1.png",
+          "price":200,
+          "base":"Thin crust",
+          "type":"Cheese burst"
+       },
+       {
+          "id":12,
+          "name":"Narco",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"./assets/2.png",
+          "price":300,
+          "base":"Multigrain",
+          "type":"Cheese burst"
+       },
+       {
+        "id":20,
+        "name":"Tornado",
+        "init":"v",
+        "pizza":"Veg",
+        "image":"assets/2.png",
+        "price":200,
+        "base":"Flat bread",
+        "type":"Cheese Topping"
+     },
+     {
+        "id":21,
+        "name":"Mr. Nice",
+        "init":"v",
+        "pizza":"Veg",
+        "image":"assets/1.png",
+        "price":200,
+        "base":"Thin crust",
+        "type":"Cheese burst"
+     }
+      ],
+      "AddressLine1": "XYZ Street",
+      "AddressLine2": "Block Road",
+      "City":"Bengaluru",
+      "Landmark":"Opposite to Water Tank",
+      "Pincode":560059,
+      "State":"Karnataka"
+    },
+    {"Id": 11111113,
+      "Items": [
+       {
+          "id":12,
+          "name":"Narco",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"./assets/2.png",
+          "price":300,
+          "base":"Multigrain",
+          "type":"Cheese burst"
+       }
+      ],
+      "AddressLine1": "XYZ Street",
+      "AddressLine2": "Block Road",
+      "City":"Bengaluru",
+      "Landmark":"Opposite to Water Tank",
+      "Pincode":560059,
+      "State":"Karnataka"
+    },
+    {"Id": 11111114,
+      "Items": [
+        {
+          "id":27,
+          "name":"Dynama",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"assets/7.png",
+          "price":250,
+          "base":"Regular base",
+          "type":"Cheese burst"
+       },
+       {
+          "id":28,
+          "name":"Dr IQ",
+          "init":"n",
+          "pizza":"Veg",
+          "image":"assets/8.png",
+          "price":400,
+          "base":"Multigrain",
+          "type":"Cheese burst"
+       },
+       {
+          "id":29,
+          "name":"Magma",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"assets/1.png",
+          "price":250,
+          "base":"Thin crust",
+          "type":"Cheese burst"
+       },
+       {
+          "id":30,
+          "name":"Tornado",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"assets/2.png",
+          "price":600,
+          "base":"Multigrain",
+          "type":"Cheese Topping"
+       },
+        {
+          "id":11,
+          "name":"Mr. Nice",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"assets/1.png",
+          "price":200,
+          "base":"Thin crust",
+          "type":"Cheese burst"
+       },
+       {
+          "id":12,
+          "name":"Narco",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"./assets/2.png",
+          "price":300,
+          "base":"Multigrain",
+          "type":"Cheese burst"
+       }
+      ],
+      "AddressLine1": "XYZ Street",
+      "AddressLine2": "Block Road",
+      "City":"Bengaluru",
+      "Landmark":"Opposite to Water Tank",
+      "Pincode":560059,
+      "State":"Karnataka"
+    },
+    {"Id": 11111115,
+      "Items": [
+       {
+          "id":12,
+          "name":"Narco",
+          "init":"v",
+          "pizza":"Veg",
+          "image":"./assets/2.png",
+          "price":300,
+          "base":"Multigrain",
+          "type":"Cheese burst"
+       }
+      ],
+      "AddressLine1": "XYZ Street",
+      "AddressLine2": "Block Road",
+      "City":"Bengaluru",
+      "Landmark":"Opposite to Water Tank",
+      "Pincode":560059,
+      "State":"Karnataka"
     }
   ]
 }

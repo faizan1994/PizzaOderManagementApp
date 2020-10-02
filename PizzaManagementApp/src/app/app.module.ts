@@ -10,13 +10,15 @@ import { DisplayOrdersComponent } from './modules/order-management/components/di
 import { OrderDetailsComponent } from './modules/order-management/components/order-details/order-details.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { ErrorInterceptor } from './core/services/error-interceptor/error.interceptor';
+import { ProgressBarComponent } from './shared/component/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayOrdersComponent,
     OrderDetailsComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

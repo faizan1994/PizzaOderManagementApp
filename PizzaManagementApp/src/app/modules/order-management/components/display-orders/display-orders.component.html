@@ -1,18 +1,60 @@
 
-<div class="container">
-    
-    <div class="order-display header">
+<div class="container">   
+    <div class="order-display-header">
         <h2>Orders Received</h2>
-        <div class="row" *ngFor="let order of ordersRecievedData">
-            <div class="col-lg-4">
-                <p>{{order.CustomerName}}</p>
+    </div>
+    <div class="order-display-body">
+        <div class="row tile-header">
+            <div class="col-lg-2">
+                <label><b>OrderID</b></label>
+             </div>
+            <div class="col-lg-3">
+               <label><b>Customer Name</b></label>
             </div>
-            <div class="col-lg-4">
-                <p>{{order.NoOfItemsOrdered}}</p>
+            <div class="col-lg-2">
+              <label><b>No. of Items</b></label>
             </div>
-            <div class="col-lg-4">            
-                <p>{{order.CurrentStatus}}</p>
+            <div class="col-lg-2">            
+                <label><b>Status</b></label>
+            </div>
+            <div class="col-lg-3">            
+                <label><b>Action</b></label>
             </div>
         </div>
+        <div class="row tile" title="click to view details" *ngFor="let order of ordersRecievedData" >
+            <div class="col-lg-2">
+                <p>{{order.Id}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{order.CustomerName}}</p>
+            </div>
+            <div class="col-lg-2">
+                <p>{{order.NoOfItemsOrdered}}</p>
+            </div>
+            <div class="col-lg-2">            
+                <p>{{order.CurrentStatus}}</p>
+            </div>
+            <div class="col-lg-3 button-group">
+                            
+                <button mat-button [matMenuTriggerFor]="menu">
+                    <mat-icon>arrow_drop_down_circle</mat-icon>Status Change</button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item value="Recieved" (click)="selectedStatus('Recieved',order.Id)">Recieved</button>
+                    <button mat-menu-item value="Preparing" (click)="selectedStatus('Being Prepared',order.Id)">Preparing</button>
+                    <button mat-menu-item value="Ready" (click)="selectedStatus('Ready to serve',order.Id)">Ready</button>
+                  </mat-menu>
+
+            
+                  <button mat-button (click)="openOrderDetails(order)">
+                    <mat-icon>remove_red_eye</mat-icon>
+                   Details
+                </button>
+            </div> 
+            <div class="col-lg-12 progress-bar-line" >
+                <app-progress-bar [status]="order.CurrentStatus"></app-progress-bar>
+            </div>
+
+        </div>
+        
     </div>
 </div>
